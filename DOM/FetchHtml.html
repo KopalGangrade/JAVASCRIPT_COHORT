@@ -1,0 +1,49 @@
+<!-- Fetching HTML Elements:
+
+1. Create an HTML file with a <div> element that has an ID attribute set to "myDiv" and contains the text "Hello, World!". Using JavaScript, fetch the element with the ID "myDiv" and log its content to the console.
+
+
+2. Create an HTML file with two or more <div> elements that have the same class "myClass" but contain different text. Using JavaScript, fetch all the elements with the class "myClass" and log their contents to the console.
+
+3. Create an HTML file with two or more <p> elements, each containing different text. Using JavaScript, fetch all the <p> elements and log their contents to the console.
+
+4. Query Selector: Create an HTML file with a <div> element that has an ID attribute set to "myDiv" and contains the text "Hello, World!", and a <p> element with a class attribute set to "myClass" and contains the text "Paragraph". Using JavaScript, fetch the <div> element using the ID selector (#myDiv) and log its contents to the console. Then, fetch the <p> element using the class selector (.myClass) and log its contents to the console. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myDiv">Hello, World!</div>
+    <div class="myClass">HTML</div>
+    <div class="myClass">CSS</div>
+    <div class="myClass">JAVASCRIPT</div>
+    <p>Paragraph1</p>
+    <p>Paragraph2</p>
+    <p>Paragraph3</p>
+    <div id="myDiv_1">selectquery</div>
+    <p class="my_para">paragraph in query</p>
+    <script>
+        let myDiv = document.getElementById("myDiv");
+        console.log(myDiv);
+
+        let myClass_Container = document.getElementsByClassName("myClass");
+        console.log(myClass_Container);
+
+        let paragraph = document.getElementsByTagName("p");
+        console.log(paragraph);
+
+        let div_query = document.querySelector("#div");
+        console.log(div_query);
+
+        let para_Query = document.querySelector(".p");
+        console.log(para_Query);
+    </script>
+
+</body>
+</html>
