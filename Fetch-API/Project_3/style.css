@@ -1,0 +1,89 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 90vh;
+    width: 80%;
+    border: 2px solid black;
+    align-items: center;
+    margin: 30px 120px;
+    background: rgb(227, 172, 236);
+}
+
+h1{
+    font-size: 4rem;
+    color: blueviolet;
+
+}
+
+.input_box{
+    height: 10vh;
+    width: 20vh;
+    border: 2px solid brown;
+}
+#input{
+    position: absolute;
+    margin: 15vw;
+    height: 7vh;
+    width: 25vw;
+}
+
+#button{
+    position: absolute;
+    height: 7vh;
+    width: 10vh;
+    margin:15vw 89vh;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 90vh;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto; /* Center the container horizontally */
+    background: rgb(227, 172, 236);
+    position: relative; /* Needed for absolute positioning of children */
+    padding-bottom: 30vh ;
+}
+
+h1 {
+    font-size: 4rem;
+    color: blueviolet;
+    text-align: center; /* Center the text within the h1 */
+}
+
+.input_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7vh;
+    gap: 4px;
+}
+
+#input {
+    height: 7vh;
+    width: 24vw;
+    margin-bottom: 10px; /* Add some space below the input */
+}
+
+#button {
+    height: 7vh;
+    width: 10vh;
+    margin-bottom: 12px;
+    
+}
+
+.result{
+}
