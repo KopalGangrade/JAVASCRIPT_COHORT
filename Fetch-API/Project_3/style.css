@@ -1,89 +1,88 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-    height: 90vh;
-    width: 80%;
-    border: 2px solid black;
-    align-items: center;
-    margin: 30px 120px;
-    background: rgb(227, 172, 236);
-}
-
-h1{
-    font-size: 4rem;
-    color: blueviolet;
-
-}
-
-.input_box{
-    height: 10vh;
-    width: 20vh;
-    border: 2px solid brown;
-}
-#input{
-    position: absolute;
-    margin: 15vw;
-    height: 7vh;
-    width: 25vw;
-}
-
-#button{
-    position: absolute;
-    height: 7vh;
-    width: 10vh;
-    margin:15vw 89vh;
-} */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 4vh;
+    background: rgb(199, 155, 155);
+}
+
 .container {
-    height: 90vh;
-    width: 80%;
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto; /* Center the container horizontally */
-    background: rgb(227, 172, 236);
-    position: relative; /* Needed for absolute positioning of children */
-    padding-bottom: 30vh ;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, rgb(238, 207, 230) , rgb(234, 232, 239));
 }
 
-h1 {
-    font-size: 4rem;
+.logo,
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    margin-left: 9vw;
     color: blueviolet;
-    text-align: center; /* Center the text within the h1 */
 }
 
-.input_box {
+.flex{
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.search-container {
     display: flex;
     justify-content: center;
+    margin: 50px;
+}
+
+.box {
+    background: rgb(199, 155, 155);
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.searchbox {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 7vh;
-    gap: 4px;
+    padding: 23px;
 }
 
-#input {
-    height: 7vh;
-    width: 24vw;
-    margin-bottom: 10px; /* Add some space below the input */
+input {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: none;
 }
 
-#button {
-    height: 7vh;
-    width: 10vh;
-    margin-bottom: 12px;
-    
+button {
+    background: grey;
+    border: none;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.result{
+
+.result {
+    background-color: rgb(136, 138, 138);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
 }
