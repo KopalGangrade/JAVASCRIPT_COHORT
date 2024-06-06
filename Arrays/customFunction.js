@@ -15,15 +15,15 @@ function forEachArray(array, callback) {
 
 
 
-// let mapCallback = (e)=>{
-//     return e;
-// }
+let mapCallback = (e)=>{
+    return e;
+}
 
-// function mapArray(array, callback) {
-//     return callback(array);
-// }
-// let result = mapArray([1,2,4,5,6], mapCallback);
-// console.log(result);
+function mapArray(array, callback) {
+    return callback(array);
+}
+let result = mapArray([1,2,4,5,6], mapCallback);
+console.log(result);
 
 
 
@@ -33,18 +33,18 @@ function forEachArray(array, callback) {
 // function filterArray(array, callback) {}
 
 
-// function filterArray(arr, callback) {
-//     let filteredArr = [];
-//     for (let i = 0; i < arr.length; i++) {
-//       if (callback(arr[i])) {
-//         filteredArr.push(arr[i]);
-//       }
-//     }
-//     return filteredArr;
-//   }
+function filterArray(arr, callback) {
+    let filteredArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (callback(arr[i])) {
+        filteredArr.push(arr[i]);
+      }
+    }
+    return filteredArr;
+  }
   
 //   // Example usage:
-//   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   
   function isEven(num) {
     return num % 2 === 0;
