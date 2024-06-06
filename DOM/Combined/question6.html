@@ -7,12 +7,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #div{
+            height: 30vh;
+            width: 30vw;
+            border: 2px solid darkcyan;
+            margin-top: 30vh;
+            margin-left: 30vw;
+            font-size: medium;
+            cursor: pointer;
+        }
+        .btn_box{
+            margin-left: 36vw;
+            margin-top: 4vh;
+        }
+    </style>
 </head>
 <body>
-    <div></div>
-    <button id="btn1">small</button>
-    <button id="btn2">medium</button>
-    <button id="btn3">large</button>
-    <button id="btn4">extra large</button>
+    <div id="div">Text</div>
+    <div>
+        <button>small</button>
+        <button>medium</button>
+        <button>large</button>
+        <button>X-Large</button>
+    </div>
+
+    <script>
+        let div = document.getElementById("div");
+        let buttons = document.querySelectorAll("button")
+
+        buttons.forEach(element => {
+            element.addEventListener("click",()=>{
+            const size = element.textContent.toLowerCase();
+
+            div.style.fontSize= size ;
+        })
+        });
+
+
+       
+    </script>
 </body>
 </html>

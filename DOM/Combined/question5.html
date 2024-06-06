@@ -6,12 +6,68 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+
+            div{
+                height: 20vh;
+                width: 20vw;
+                border: 2px solid black;
+                display: flex;
+                justify-content: center;
+                background: #000;
+            }
+            button{
+                margin: 20px;
+                background-color: white;
+                cursor: pointer;
+            }
+            #red{
+                background: red;
+            }
+            #yellow{
+                background: yellow;
+            }
+            #blue{
+                background: blue;
+            }
+            #green{
+                background-color: green;
+            }
+
+        </style>
     </head>
     <body>
-        <div></div>
-        <button>red</button>
-        <button>yellow</button>
-        <button>blue</button>
-        <button>green</button>
+        <div id="div"></div>
+        <button class="btn" id="red">red</button>
+        <button class="btn" id="yellow">yellow</button>
+        <button class="btn" id="blue">blue</button>
+        <button class="btn" id="green">green</button>
+
+        <script>
+            let div_Box = document.getElementById("div");
+            let button_red = document.getElementById("red");
+            let button_yellow = document.getElementById("yellow");
+            let button_blue = document.getElementById("blue");
+            let button_green = document.getElementById("green");
+        
+
+
+            button_red.addEventListener("click",()=>{
+                div_Box.style.backgroundColor="red";
+            })
+
+            button_yellow.addEventListener("click",()=>{
+                div_Box.style.backgroundColor="yellow";
+            })
+
+            button_blue.addEventListener("click",()=>{
+                div_Box.style.backgroundColor="blue";
+            })
+            
+            button_green.addEventListener("click",()=>{
+                div_Box.style.backgroundColor="green";
+            }
+            )
+        </script>
     </body>
     </html>

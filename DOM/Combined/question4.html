@@ -1,4 +1,5 @@
-<!-- Create an HTML file with multiple <div> elements, each containing different text. Using JavaScript, add a click event listener to each <div> element that toggles the background color of that particular <div> between red and white -->
+<!-- Create an HTML file with multiple <div> elements, each containing different text. Using JavaScript, add a click event listener to each <div> element that toggles the background color of that particular <div> between red and white. -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,11 +7,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div {
+            cursor: pointer;
+            background-color: white;
+        }
+    </style>
 </head>
 <body>
     <div>html</div>
     <div>css</div>
     <div>js</div>
     <div>react</div>
+    <script>
+        let divs = document.getElementsByTagName("div");
+
+        for (let i = 0; i < divs.length; i++) {
+            divs[i].addEventListener("click", function() {
+                if (this.style.backgroundColor === "white") {
+                    this.style.backgroundColor = "red";
+                } else {
+                    this.style.backgroundColor = "white";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
+
