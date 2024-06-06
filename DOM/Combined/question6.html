@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="div">Text</div>
-    <div>
+    <div class="btn_box">
         <button>small</button>
         <button>medium</button>
         <button>large</button>
@@ -39,7 +39,6 @@
         buttons.forEach(element => {
             element.addEventListener("click",()=>{
             const size = element.textContent.toLowerCase();
-
             div.style.fontSize= size ;
         })
         });
